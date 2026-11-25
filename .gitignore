@@ -1,0 +1,54 @@
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa
+id_ed25519
+
+# Terraform state and provider-generated working files
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+crash.log
+
+# Local virtual machine disks, snapshots and runtime files
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.qcow2
+*.vmsd
+*.vmsn
+*.vmem
+*.vmss
+*.nvram
+*.vswp
+*.iso
+*.ova
+*.ovf
+
+# Python and development caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# IDE and OS artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backups and local scratch files
+*.bak
+*.tmp
+*.swp
+*~
