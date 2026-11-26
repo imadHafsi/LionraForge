@@ -1,0 +1,58 @@
+LionraForge — Phase 01 / Lab 01
+VMware verification evidence
+
+Source: Command results recorded during implementation.
+This is a consolidated record of observed results.
+
+VMWARE WORKSTATION
+------------------
+Product: VMware Workstation Pro 26H1u1
+Version: 26.0.1.25688693
+
+WINDOWS SERVICES
+----------------
+VMAuthdService
+VMware Authorization Service
+Running / Automatic
+
+VMnetDHCP
+VMware DHCP Service
+Running / Automatic
+
+VMUSBArbService
+VMware USB Arbitration Service
+Running / Automatic
+
+VMware NAT Service
+VMware NAT Service
+Running / Automatic
+
+VmwareAutostartService
+VMware Autostart Service
+Stopped / Manual
+
+VIRTUAL NETWORK ADAPTERS
+------------------------
+VMnet1
+Status: Up
+Reported link speed: 100 Mbps
+IPv4: 192.168.108.1/24
+AddressState: Preferred
+
+VMnet8
+Status: Up
+Reported link speed: 100 Mbps
+IPv4: 192.168.24.1/24
+AddressState: Preferred
+
+UBUNTU NETWORK CONNECTIVITY
+---------------------------
+Guest interface: ens33
+Guest IP: 192.168.108.130/24
+Host IP: 192.168.108.1/24
+
+Initial guest-to-host test:
+4 packets transmitted, 0 received, 100% packet loss
+
+Final guest-to-host test after scoped firewall rule:
+4 packets transmitted, 4 received, 0% packet loss

@@ -1,0 +1,46 @@
+LionraForge — Phase 01 / Lab 01
+Host preparation evidence
+Inspection date: 25 November 2026
+
+Source: Command results recorded during implementation.
+This file is a consolidated inventory, not a raw terminal transcript.
+
+PHYSICAL HOST
+-------------
+Host: Gigabyte Aero 15-SA
+Processor: Intel Core i7-9750H
+Operating system: Windows 11 Home, 64-bit
+Reported RAM: 15.8 GB
+Hardware virtualization: Enabled
+
+STORAGE
+-------
+C:
+Physical disk: Disk 0
+Model: Intel SSDPEKKW256G8
+Capacity: 238.5 GB
+Free space: 166.9 GB
+Filesystem: NTFS
+Health: Healthy
+
+D:
+Physical disk: Disk 1
+Model: Crucial CT1000P1SSD8
+Capacity: 931.5 GB
+Free space: 492.5 GB
+Filesystem: NTFS
+Health: Healthy
+
+WINDOWS HYPERVISOR
+------------------
+HypervisorPresent: False
+VirtualMachinePlatform: Disabled
+HypervisorPlatform: Disabled
+Microsoft-Hyper-V-All: Not returned
+
+LAB DIRECTORIES
+---------------
+D:\LionraForge\Backups
+D:\LionraForge\GNS3-Projects
+D:\LionraForge\ISO-Images
+D:\LionraForge\Virtual-Machines

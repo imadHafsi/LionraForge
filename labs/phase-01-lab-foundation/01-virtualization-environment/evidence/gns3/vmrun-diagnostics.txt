@@ -1,0 +1,35 @@
+LionraForge — Phase 01 / Lab 01
+GNS3 VMware compatibility diagnostics
+
+GNS3 version: 2.2.61
+VMware Workstation: 26H1u1
+
+INITIAL EXECUTABLE DISCOVERY
+----------------------------
+PS> where.exe vmrun
+
+INFO: Could not find files for the given pattern(s).
+
+EXECUTABLE LOCATION
+-------------------
+PS> Get-ChildItem "C:\Program Files\VMware" -Filter vmrun.exe -Recurse -ErrorAction SilentlyContinue | Select-Object FullName
+
+FullName
+--------
+C:\Program Files\VMware\VMware Workstation\vmrun.exe
+
+DIRECT EXECUTION
+----------------
+PS> & "C:\Program Files\VMware\VMware Workstation\vmrun.exe" list
+
+Total running VMs: 0
+
+FINAL RESULT
+------------
+GNS3 VM startup: Successful
+Local server: Online
+GNS3 VM server: Online
+KVM support available: True
+Normal application launch after PATH configuration: Successful
+
+The final startup result was confirmed during implementation.
