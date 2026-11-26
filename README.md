@@ -40,7 +40,11 @@ For day-to-day IT operations, I plan to use GLPI to manage support tickets and I
 
 As the infrastructure grows, I'll add centralized monitoring, IDS/IPS, a SIEM and an isolated attacker environment. This will allow me to simulate security incidents, investigate alerts and test how the company's security controls respond.
 
-The project will start on two physical laptops, with virtual machines and network workloads distributed between them as resources allow. I'll expand the environment gradually, testing and documenting each part before introducing the next.
+I'm using a Gigabyte Aero 15 as my primary virtualization host, with a second AMD Ryzen laptop available for additional workloads when required.
+
+I've completed the initial virtualization environment using VMware Workstation Pro and GNS3, deployed an Ubuntu Server test machine, and successfully tested basic virtual network communication.
+
+The core infrastructure will initially run on the primary host. I'll introduce additional physical hosting resources as the environment grows.
 
 **Architecture status: Planned.** The Dublin and Limerick sites are modelled network locations within my lab, not claims of operational offices. A layered high-level diagram is part of the approved design but has not yet been committed as an editable diagram or image. The [architecture document](docs/architecture/README.md) records the current plan; diagrams will be added with their editable sources.
 
@@ -76,7 +80,7 @@ I'll document each stage as I work through it, including the configuration steps
 
 | Phase | What I'll Build and Practise | Status |
 |---|---|---|
-| 01 — Lab Foundation | Prepare VMware Workstation, GNS3, virtual machines and the initial lab networking environment | Planned |
+| 01 — Lab Foundation | Prepare VMware Workstation, GNS3, virtual machines and the initial lab networking environment | Verified |
 | 02 — Enterprise Networking | Build the Dublin and Limerick networks, configure VLANs, IP addressing, switching, inter-VLAN routing and initial inter-site connectivity | Planned |
 | 03 — Active Directory & DNS | Deploy two domain controllers, configure `ad.lionraforge.test`, AD Sites, organizational units, users, groups and DNS | Planned |
 | 04 — Workstation Management | Deploy Windows and Linux workstations, join supported systems to the domain, configure Group Policy and access permissions | Planned |
@@ -91,6 +95,16 @@ I'll document each stage as I work through it, including the configuration steps
 | 13 — SOC & Incident Response | Simulate security incidents, investigate alerts, correlate evidence, document findings and practise response procedures | Planned |
 | 14 — Purple Team Exercises | Use an isolated attacker environment to run controlled attack simulations, evaluate detections and improve security controls | Planned |
 | 15 — Cloud, DevOps & SaaS Expansion | Extend selected services into the cloud, explore deployment pipelines, and develop, deploy and secure a business management SaaS application | Planned |
+
+### Completed Milestones
+
+| Lab | Implementation | Status |
+|---|---|---|
+| [Lab 01 — Virtualization and Network Lab Foundation](labs/phase-01-lab-foundation/01-virtualization-environment/README.md) | Physical host preparation, VMware Workstation, Ubuntu Server, GNS3 integration and initial network testing | Verified |
+
+I've established the initial virtualization and network simulation environment and resolved technical issues involving Windows Firewall and GNS3 compatibility with VMware Workstation.
+
+The next stage is to implement the enterprise networks for the Dublin and Limerick sites.
 
 ### Progress Tracking
 
@@ -128,7 +142,7 @@ Each implementation phase will contain practical labs explaining:
 
 Labs will be organised in implementation order, starting with the environment setup and enterprise networking before progressing to systems administration, IT support and cybersecurity.
 
-**Lab Guides:** [Lab documentation approach](labs/README.md) — individual lab guides will become available as labs are implemented and verified.
+**Lab Guides:** [Browse the implementation labs](labs/README.md) — including completed configurations, practical troubleshooting, verification results and supporting evidence.
 
 ### Browse by Technical Subject
 

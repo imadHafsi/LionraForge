@@ -1,6 +1,25 @@
 # Lab Guides
 
-**Status:** No LionraForge implementation labs have been completed or published in this review package.
+**Status:** The first LionraForge implementation lab has been completed and verified.
+
+## Available Labs
+
+### Phase 01 — Lab Foundation
+
+| Lab | Description | Status |
+|---|---|---|
+| [01 — Virtualization and Network Lab Foundation](phase-01-lab-foundation/01-virtualization-environment/README.md) | Physical host preparation, VMware Workstation, Ubuntu Server, GNS3 and initial networking | Verified |
+
+Supporting documentation:
+
+- [Implementation guide](phase-01-lab-foundation/01-virtualization-environment/README.md)
+- [Troubleshooting journal](phase-01-lab-foundation/01-virtualization-environment/troubleshooting.md)
+- [Verification results](phase-01-lab-foundation/01-virtualization-environment/verification.md)
+- [Supporting evidence](phase-01-lab-foundation/01-virtualization-environment/evidence/)
+
+### Phase 02 — Enterprise Networking
+
+Planned. I'll introduce the Dublin and Limerick networks, VLAN segmentation, switching and routing in this phase.
 
 I will organise labs in chronological phases with descriptive directory names, for example `phase-03-active-directory/01-install-domain-controller/`. These names will be finalised when I begin each lab, not created as empty placeholders now.
 
